@@ -5,13 +5,13 @@ Dosen Pengampu : Anggay Luri Pramana,M.Kom
 Metode Regula Falsi ini adalah solusi sistem persamaan non linear untuk menentukan akar persamaan dengan cara memanfaatkan kemiringan dan selisih tinggi dari selang. Cara kerja metode ini prinsipnya hampir sama dengan metode bisection yaitu menggunakan iterasi dengan memperbarui selangnya, tapi bedanya dirumus c.
 
 # Code dari Metode Regula Falsi 
-    def f(x):
-        return x**2 - 6*x + 5
+        def f(x):
+            return x**2 - 6*x + 5
 
-    def find_root_bisection(a, b, tolerance):
-        if f(a) * f(b) >= 0:
-           print("Tidak ada akar dalam selang ini.")
-           return None
+        def find_root_bisection(a, b, tolerance):
+            if f(a) * f(b) >= 0:
+               print("Tidak ada akar dalam selang ini.")
+               return None
     
         while (b - a) / 2 > tolerance:
            midpoint = (a + b) / 2
